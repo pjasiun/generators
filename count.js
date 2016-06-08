@@ -16,7 +16,9 @@ function count( iterator ) {
 	return count;
 }
 
-const ten = range( 0, 10 );
+// const ten = Array.from( range( 1, 10 ) );
+const ten = [ ...range( 1, 10 ) ];
+// const ten = range( 0, 10 );
 
 // for ( let value of ten ) {
 // 	console.log( value );

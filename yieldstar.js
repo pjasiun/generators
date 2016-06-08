@@ -14,7 +14,11 @@ function* range( start, end ) {
 }
 
 function* oneTwoThreeGo() {
+	// const iterator = oneTwoThree();
+	// yield* iterator;
+	// yield* iterator;
 	yield* oneTwoThree();
+	// yield* [ 1, 2, 3 ];
 	yield '-';
 	yield* range( 1, 8 );
 	yield '-';

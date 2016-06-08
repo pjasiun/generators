@@ -31,14 +31,21 @@ const range = {
 // 	step = iterator.next();
 // }
 
-// for ( let value of range ) {
-// 	console.log( value );
-// }
+for ( let value of range ) {
+	console.log( value );
+}
 
-const array = [ 'a', 'b', 'c' ];
-const arrayIterator = array[ Symbol.iterator ]();
+const array = [ 1, 2, 3, 4, 5 ];
 
-console.log( arrayIterator.next() );
-console.log( arrayIterator.next() );
-console.log( arrayIterator.next() );
-console.log( arrayIterator.next() );
+// const iterator = array[ Symbol.iterator ]();
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+// console.log( iterator.next() );
+
+for ( let value of array ) {
+	console.log( value );
+}

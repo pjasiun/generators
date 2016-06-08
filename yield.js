@@ -17,14 +17,12 @@ function* range( start, end ) {
 	yield end;
 }
 
-for ( let i = 1; i <= 10; i++ ) {
-	console.log( i );
+// console.log( oneTwoThree()[ Symbol.iterator ]() );
+
+for ( let value of oneTwoThree() ) {
+	console.log( value );
 }
 
 for ( let value of range( 1, 10 ) ) {
 	console.log( value );
 }
-
-Array.from( range( 1, 10 ) ).forEach( ( value ) => {
-	console.log( value );
-} );

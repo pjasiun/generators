@@ -35,6 +35,4 @@ for ( let property in range( 1, 10 ) ) {
 	console.log( property );
 }
 
-Array.from( range( 1, 10 ) ).forEach( ( value ) => {
-	console.log( value );
-} );
+Array.from( range( 1, 10 ) ).forEach( ( i ) => console.log( i ) );
