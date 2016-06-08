@@ -13,7 +13,8 @@ for ( let number of filter( numbers, ( v ) => v > 5 ) ) {
 	console.log( number );
 }
 
-// comprehensions https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Generator_comprehensions
+// Generator comprehensions (curently support only by Firefox)
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Generator_comprehensions
 const moreThenFive = ( for ( v of numbers ) if ( v > 5 ) v );
 for ( let number of moreThenFive ) {
 	console.log( number );
