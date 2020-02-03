@@ -6,7 +6,7 @@ function* getWords( text ) {
 	let word = '';
 
 	for ( let character of text ) {
-		if ( '.,! '.indexOf( character ) == -1 ) {
+		if ('.,! '.includes(character) == false ) {
 			word += character;
 		} else if ( word !== '' ) {
 			yield word;
@@ -15,9 +15,19 @@ function* getWords( text ) {
 	}
 }
 
-function hasAmet( text ) {
+// function* getWordsLen( text ) {
+// 	for( let word of getWords(text) ) {
+// 		yield word.length;
+// 	}
+// }
+
+// for (const word of getWordsLen(text)) {
+// 	console.log(word)
+// }
+
+function has(text, lookup) {
 	for ( let word of getWords( text ) ) {
-		if ( word == 'amet' ) {
+		if (word == lookup ) {
 			return true;
 		}
 	}
@@ -25,4 +35,16 @@ function hasAmet( text ) {
 	return false;
 }
 
-console.log( hasAmet( text ) );
+// function hasLongerThen(text, len) {
+// 	for (let word of getWordsLen(text)) {
+// 		if (word > len) {
+// 			return true;
+// 		}
+// 	}
+
+// 	return false;
+// }
+
+console.log(has(text, 'amet'));
+
+// console.log(hasLongerThen(text, 5));

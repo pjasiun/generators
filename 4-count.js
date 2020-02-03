@@ -37,3 +37,6 @@ const ten = range( 1, 10 );
 if (first(ten) == 1 ) {
 	console.log(count(ten));
 }
+
+const array = ['a', 'b', 'c'];
+console.log(first(array[Symbol.iterator]()));

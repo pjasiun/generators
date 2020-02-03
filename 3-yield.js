@@ -17,7 +17,10 @@ function* range( start, end ) {
 	yield end;
 }
 
-// console.log( oneTwoThree()[ Symbol.iterator ]() );
+console.log(oneTwoThree);
+console.log(oneTwoThree()[Symbol.iterator]());
+console.log(oneTwoThree()[Symbol.iterator]().next());
+console.log(oneTwoThree()[Symbol.iterator]().next().value);
 
 for ( let value of oneTwoThree() ) {
 	console.log( value );
