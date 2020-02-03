@@ -12,7 +12,6 @@ Samples to show how ECMAScript 6 generators and iterators works and can be used.
 
  - you can not iterate twice,
  - no map, filter, tools,
- - for... what?.
 
 # Links:
 

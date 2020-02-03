@@ -15,14 +15,11 @@ class World {
 		for ( let continent of this.continents ) {
 			yield* continent;
 		}
-
-		yield 'Brasil';
 	}
 }
 
 class Continent {
-	constructor( name, countries ) {
-		this.name = name;
+	constructor( countries ) {
 		this.countries = Array.from( countries );
 	}
 
@@ -31,9 +28,9 @@ class Continent {
 	}
 }
 
-const europe = new Continent( 'Europe', [ 'Poland', 'Germany', 'Ukraine' ] );
-const asia = new Continent( 'Asia', new Set( [ 'Japan', 'China', 'Russia' ] ) );
-const africa = new Continent( 'Africa', [ 'Egypt', 'Turkey', 'Nigeria' ] );
+const europe = new Continent( [ 'Poland', 'Germany', 'Ukraine' ] );
+const asia = new Continent( new Set( [ 'Japan', 'China', 'Russia' ] ) );
+const africa = new Continent( [ 'Egypt', 'Turkey', 'Nigeria' ] );
 
 const world = new World( [ europe, asia, africa ] );
 

@@ -16,13 +16,24 @@ function count( iterator ) {
 	return count;
 }
 
+function first( iterator ) {
+	return iterator.next().value;
+}
+
+const ten = range( 1, 10 );
 // const ten = Array.from( range( 1, 10 ) );
-const ten = [ ...range( 1, 10 ) ];
-// const ten = range( 0, 10 );
+// const ten = [ ...range( 1, 10 ) ];
 
 // for ( let value of ten ) {
 // 	console.log( value );
 // }
 
-console.log( count( ten ) );
-console.log( count( ten ) );
+// console.log( count( ten ) );
+// console.log( count( ten ) );
+
+// console.log(first(ten));
+// console.log(count(ten));
+
+if (first(ten) == 1 ) {
+	console.log(count(ten));
+}
