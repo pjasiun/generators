@@ -1,6 +1,14 @@
-# ES6 generators samples
+# Generators vs iterable vs iterator
 
-Samples to show how ECMAScript 6 generators and iterators works and can be used. Get them, run them, play with them, learn from them.
+See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator
+
+The Generator object is returned by a generator function and it conforms to both the iterable protocol and the iterator protocol.
+
+
+In order to be iterable, an object must implement the @@iterator method, meaning that the object (or one of the objects up its prototype chain) must have a property with a @@iterator key which is available via constant Symbol.iterator:
+
+
+An object is an iterator when it implements a next() method with the following semantics...
 
 # Profits:
 
@@ -11,7 +19,7 @@ Samples to show how ECMAScript 6 generators and iterators works and can be used.
 # Problems:
 
  - you can not iterate twice,
- - no map, filter, tools,
+ - no map, filter, tools...
 
 # Links:
 

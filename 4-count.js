@@ -9,7 +9,7 @@ function* range( start, end ) {
 
 function count( iterator ) {
 	let count = 0;
-	for ( let value of iterator ) {
+	for ( let _ of iterator ) {
 		count++;
 	}
 
@@ -34,9 +34,9 @@ const ten = range( 1, 10 );
 // console.log(first(ten));
 // console.log(count(ten));
 
-if (first(ten) == 1 ) {
-	console.log(count(ten));
-}
+// if (first(ten) == 1 ) {
+// 	console.log(count(ten));
+// }
 
-const array = ['a', 'b', 'c'];
-console.log(first(array[Symbol.iterator]()));
+// const array = ['a', 'b', 'c'];
+// console.log(first(array[Symbol.iterator]()));
